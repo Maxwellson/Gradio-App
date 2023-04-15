@@ -82,9 +82,7 @@ with gr.Blocks(css=".gradio-container {background-color: black}") as app:
         Title
     
     with gr.Row():
-        img
-    
-    
+        img 
 
     with gr.Row():  
             
@@ -107,7 +105,8 @@ with gr.Blocks(css=".gradio-container {background-color: black}") as app:
     input_interface.append(gr.components.Dropdown(['No', 'Yes'], label='StreamingMovies')),
     input_interface.append(gr.components.Dropdown(['Month-to-month', 'One year', 'Two year'], label='Contract')),
     input_interface.append(gr.components.Dropdown(['Yes', 'No'], label='PaperlessBilling')),
-    input_interface.append(gr.components.Dropdown(['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'], label='PaymentMethod')),
+    input_interface.append(gr.components.Dropdown(['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 
+                                                   'Credit card (automatic)'], label='PaymentMethod')),
         
 
     predict_btn= gr.Button('Predict')
